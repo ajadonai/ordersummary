@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- title -->
+    <title>Order summary card</title>
+
+    <!-- style  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- order starts -->
+    <div class="component text-center mt-5 rounded-4 w-400 order">
+      <div class="row">
+        <!-- logo -->
+        <div class="col-12">
+          <img
+            src="images/illustration-hero.svg"
+            alt="human animation listening to music"
+            class="logo"
+          />
+        </div>
+        <div class="container mb-3">
+          <!-- order summary -->
+          <div class="col-12 mt-5 order-summary">
+            <h1>Order Summary</h1>
+            <p class="mt-4">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+
+          <!-- pricing -->
+          <div class="col-11 mt-4 mx-3 ps-4 py-3 pricing">
+            <div class="row">
+              <div class="col d-flex justify-content-around">
+                <img
+                  src="images/icon-music.svg"
+                  alt="music icon"
+                  class="plan-icon me-3"
+                />
+                <div>
+                  <p id="planName" style="font-weight: bold">Annual Plan</p>
+                  <p id="planPrice">$4.99/ per month</p>
+                </div>
+              </div>
+              <div class="col mt-1 dropdown">
+                <button
+                  class="btn change"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Change
+                </button>
+                <ul class="dropdown-menu mt-2">
+                  <li>
+                    <a class="dropdown-item" id="yearly" href="#"
+                      >Annual (55.99)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" id="tri-monthly" href="#"
+                      >3 Months (12.99)</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" id="monthly" href="#"
+                      >1 Month (3.99)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- buttons -->
+          <div class="col-12 d-grid gap-2 mt-5 px-4">
+            <button class="btn proceed" type="button">
+              Proceed to Payment
+            </button>
+            <button class="btn my-2 cancel" type="button">Cancel Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- order ends -->
+
+    <!-- thank you starts -->
+    <div class="component text-center mt-5 rounded-4 w-400" id="thankYou">
+      <div class="row">
+        <!-- logo -->
+        <div class="col-12">
+          <img
+            src="images/illustration-hero.svg"
+            alt="human animation listening to music"
+            class="logo"
+          />
+        </div>
+        <div class="container mb-3">
+          <!-- message -->
+          <div class="col-12 mt-5 order-summary">
+            <h1 style="color: green">Thank you!</h1>
+            <p class="mt-4 mb-4">
+              Thank you for becoming a part of our family! We're excited to have
+              you on board and can't wait to bring the joy of music into your
+              life.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- thank you end -->
+
+    <!-- cancel starts -->
+    <div class="component text-center mt-5 rounded-4 w-400" id="cancelBilling">
+      <div class="row">
+        <!-- logo -->
+        <div class="col-12">
+          <img
+            src="images/illustration-hero.svg"
+            alt="human animation listening to music"
+            class="logo"
+          />
+        </div>
+        <div class="container mb-3">
+          <!-- order summary -->
+          <div class="col-12 mt-5 order-summary">
+            <h1 style="color: red">Order Canceled!</h1>
+            <p class="mt-4 mb-4">
+              We wanted to take a moment to express our sincere appreciation for
+              your interest in our music streaming service. While you haven't
+              subscribed to our plans yet, we wanted you to know that we're
+              eagerly awaiting the opportunity to have you as part of our
+              music-loving community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- cancel end -->
+
+    <!-- attribution -->
+    <div class="attribution mt-5">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Adonai Jonathan</a>.
+    </div>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
